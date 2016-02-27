@@ -30,7 +30,7 @@ export default class JumboList extends React.Component {
 
 // here we create CSS with JS notation
 // meaning objects and camel case notation
-// like fontSize istead of font-size
+// like fontSize instead of font-size
 // otherwise put it in quotes 'font-size'
 const titleStyle = {
     color: 'red'
