@@ -20,7 +20,7 @@ class TodoList extends React.Component {
     render() {
         return (
             <div className='todoList'>
-                <table style={tableStyle}>
+                <table style={ tableStyle }>
                     <tbody>
                     <Todo title='Shopping'>Milk</Todo>
                     <Todo title='Hair cut'>13:00</Todo>
@@ -36,30 +36,12 @@ let tdStyle = {
     border: '1px solid black'
 };
 
-// I am not sure getInitialState is used as it should be used
 class Todo extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            checked: false,
-            getInitialState: function(e) {
-                return e.target.checked;
-            }
-        };
-    }
-
-    handleChange(e) {
-        this.setState({checked: this.getInitialState(e)});
-    }
-
     render() {
         return (
             <tr>
-                <td style={tdStyle}>
-                    <input type="checkbox" checked={this.state.checked} onChange={this.handleChange} />
-                </td>
-                <td style={tdStyle}>{this.props.title}</td>
-                <td style={tdStyle}>{this.props.children}</td>
+                <td style={ tdStyle }>{ this.props.title }</td>
+                <td style={ tdStyle }>{ this.props.children }</td>
             </tr>
         );
     }
