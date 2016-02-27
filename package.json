@@ -1,0 +1,21 @@
+{
+  "name": "learnyoureact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express-react-views": "^0.10.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
