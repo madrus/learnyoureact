@@ -47,7 +47,6 @@ class Todo extends React.Component {
    }
    */
 
-  // Unable to get property 'setState' of undefined or null reference
   handleChange(e) {
     this.setState({checked: e.target.checked});
   }
