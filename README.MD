@@ -22,6 +22,24 @@ Example
   You should initialize state in the constructor when using ES6 classes,
   and define the getInitialState method when using React.createClass.
 
+  See the official React doc on the subject of ES6 classes.
+  ```JS
+  class MyComponent extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { /* initial state */ };
+    }
+  }
+  ```
+  is equivalent to
+  ```JS
+  var MyComponent = React.createClass({
+    getInitialState() {
+      return { /* initial state */ };
+    },
+  });
+  ```
+
 ## References
 * You can find the React.js docs here: [https://facebook.github.io/react/docs/getting-started.html](https://facebook.github.io/react/docs/getting-started.html)
 * Read more about the JSX syntax here: [https://facebook.github.io/react/docs/jsx-in-depth.html](https://facebook.github.io/react/docs/jsx-in-depth.html)
