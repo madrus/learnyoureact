@@ -17,7 +17,8 @@ Example
 
 ## Notes on exercises
 * `omitted` means that the code should be copied from the previous exercise
-* I am not sure getInitialState is used as it should be used.
+* Exercise 5
+  I am not sure getInitialState is used as it should be used.
   The two approaches are not interchangeable.
   You should initialize state in the constructor when using ES6 classes,
   and define the getInitialState method when using React.createClass.
@@ -39,6 +40,10 @@ Example
     },
   });
   ```
+* Exercise 8
+  Error: Unable to get property 'setState' of undefined or null reference
+* Exercise 9
+  Unclear how to use conditional styling
 
 ## References
 * You can find the React.js docs here: [https://facebook.github.io/react/docs/getting-started.html](https://facebook.github.io/react/docs/getting-started.html)

@@ -14,15 +14,14 @@ export default class TodoBox extends React.Component {
 
 class TodoList extends React.Component {
   render() {
-    var todo = this.props.data.map(function (bag) {
-        return <Todo title={bag.title} key={bag.title}>{bag.detail}</Todo>
-      }
+    var todo = this.props.data.map(function(bag) {
+      return <Todo title={bag.title} key={bag.title}>{bag.detail}</Todo>}
     );
     return (
       <div className="todoList">
         <table style={style}>
           <tbody>
-          {todo}
+            {todo}
           </tbody>
         </table>
       </div>
@@ -50,14 +49,12 @@ class Todo extends React.Component {
 
   // Unable to get property 'setState' of undefined or null reference
   handleChange(e) {
-    this.setState({
-      checked: e.target.checked
-    });
+    this.setState({checked: e.target.checked});
   }
 
   render() {
     return (
-      <tr style={styleToggle(this.state.checked)}>
+      <tr>
         <td style={tdStyle}>
           <input type="checkbox" checked={this.state.checked} onChange={this.handleChange}/>
         </td>
@@ -84,12 +81,6 @@ class TodoForm extends React.Component {
 
 let style = {
   border: "2px solid black"
-};
-
-function styleToggle(checked) {
-  return {
-    textDecoration: checked ? "line-through" : "none"
-  }
 };
 
 let tdStyle = {
