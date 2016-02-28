@@ -12,11 +12,15 @@ export default class TodoBox extends React.Component {
     }
 }
 
+let tableStyle = {
+    border: '2px solid black'
+};
+
 class TodoList extends React.Component {
     render() {
         return (
             <div className='todoList'>
-                <table style={style}>
+                <table style={tableStyle}>
                     <tbody>
                     <Todo title='Shopping'>Milk</Todo>
                     <Todo title='Hair cut'>13:00</Todo>
@@ -27,6 +31,10 @@ class TodoList extends React.Component {
         );
     }
 }
+
+let tdStyle = {
+    border: '1px solid black'
+};
 
 // I am not sure getInitialState is used as it should be used
 // The two approaches are not interchangeable.
@@ -76,12 +84,3 @@ class TodoForm extends React.Component {
         );
     }
 }
-
-let style = {
-    border: "2px solid black"
-};
-
-let tdStyle = {
-    border: "1px solid black"
-};
-
