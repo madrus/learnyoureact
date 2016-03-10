@@ -40,10 +40,20 @@ Example
     },
   });
   ```
+
+  Advice of Davide is to go with React.Component and not use React.createClass.
+
 * Exercise 8
   Error: Unable to get property 'setState' of undefined or null reference
+  The problem is in that the context of 'this' inside handleChange is not defined.
+  It can be set by binding it to handleChange. Either in the constructor
+  > `this.handleChange = this.handleChange.bind(this);`
+
+  or in the `render` : `onChange={this.handleChange.bind(this)}`
+
 * Exercise 9
   Unclear how to use conditional styling
+  Set style variable before styling td.
 
 ## References
 * You can find the React.js docs here: [https://facebook.github.io/react/docs/getting-started.html](https://facebook.github.io/react/docs/getting-started.html)
